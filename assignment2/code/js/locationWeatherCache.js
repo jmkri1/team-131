@@ -65,6 +65,7 @@ function LocationWeatherCache()
     // are active web service requests and so doesn't need to be saved.
     //
     this.toJSON = function() {
+        var 
     };
 
     // Given a public-data-only version of the class (such as from

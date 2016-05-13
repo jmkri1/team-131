@@ -12,6 +12,19 @@
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="shortcut icon" sizes="196x196" href="images/icon.png" />
         <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+        <title>Simple Map</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <style>
+          html, body {
+            height: 60%;
+            margin: 0;
+            padding: 0;
+          }
+          #map {
+            height: 100%;
+          }
+    </style>
     </head>
     
     <body>
@@ -30,30 +43,27 @@
               <div class="mdl-cell">
                 <form action="#">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" id="sample3">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
                     <label class="mdl-textfield__label" for="sample3">Location</label>
                     </div>
                 </form>
                   <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
                 <form action="#">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" id="sample3">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
                     <label class="mdl-textfield__label" for="sample3">Nickname</label>
                     </div>
-                </form>
-                  
+                </form>             
+                
                 <!--   Main page content here:   -->  
               </div>
             </div>
           </main>    
         </div>
-
+         <div id="map"></div>
+        
         <!--   JavaScript files:   -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=&amp;callback=initMap"></script>
         <script src="js/locationWeatherCache.js"></script>
         <script src="js/addlocationPage.js"></script>
     </body>
